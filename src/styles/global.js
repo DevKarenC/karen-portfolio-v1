@@ -8,7 +8,25 @@ const SidebarSection = styled.section`
   clip-path: inset(0px -5px 0px 0px);
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  border: 1px solid #9f91f7;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1rem;
+`;
+
+const SocialMediaButton = styled(Button)`
+  width: 30px;
+  height: 30px;
+  color: #6f3cc1;
+  border-radius: 50%;
+  padding: 0.25rem;
+`;
 
 const Image = styled.img`
   border-radius: ${(props) => props.borderRadius};
@@ -17,7 +35,9 @@ const Image = styled.img`
   object-fit: cover;
 `;
 
-const Link = styled.a``;
+const Link = styled.a`
+  color: #6f3cc1;
+`;
 
 const Text = styled.p`
   font-family: 'Lato', sans-serif;
@@ -32,4 +52,4 @@ const Title = styled(Text)`
   line-height: 1rem;
 `;
 
-export { SidebarSection, Button, Image, Link, Text, Title };
+export { SidebarSection, Button, SocialMediaButton, Image, Link, Text, Title };
