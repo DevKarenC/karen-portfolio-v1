@@ -3,7 +3,7 @@ import profilePic from '../../images/profilePic.png';
 import { SidebarSection, Image, Text, Title } from '../../styles/global';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Sidebar = () => {
   return (
@@ -22,7 +22,7 @@ const Sidebar = () => {
       {/* About Me, Languages & Tools, Projects, Contact Me sections */}
       <button>Resume</button>
       {/* social media icons */}
-      <FontAwesomeIcon icon={faPaperPlane} />
+      <FontAwesomeIcon icon={faEnvelope} />
       <FontAwesomeIcon icon={faGithubAlt} />
       <FontAwesomeIcon icon={faLinkedinIn} />
     </SidebarSection>
