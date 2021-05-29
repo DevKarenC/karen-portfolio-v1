@@ -1,13 +1,7 @@
 import React from 'react';
 import SocialMediaSection from './SocialMediaSection';
 import profilePic from '../../images/profilePic.png';
-import {
-  SidebarSection,
-  Image,
-  Text,
-  Title,
-  Button,
-} from '../../styles/global';
+import { SidebarSection, Image, Text, Title } from '../../styles/global';
 
 const Sidebar = () => {
   return (
@@ -24,7 +18,6 @@ const Sidebar = () => {
         journey to software engineering ☀️
       </Text>
       {/* About Me, Languages & Tools, Projects, Contact Me sections */}
-      <Button>Resume</Button>
       <SocialMediaSection />
     </SidebarSection>
   );
