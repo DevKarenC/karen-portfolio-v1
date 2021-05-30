@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { StyledRouterLink, NavContainer } from '../../styles/global';
 
-const Routes = () => {
+const Nav = () => {
   return (
     <Router>
       <NavContainer>
@@ -19,15 +19,8 @@ const Routes = () => {
           Get In Touch
         </StyledRouterLink>
       </NavContainer>
-      <Switch>
-        <Route exact path="/about" />
-        <Route exact path="/tech" />
-        <Route exact path="/projects" />
-        <Route exact path="/contacts" />
-      </Switch>
     </Router>
   );
-  /* About Me, Languages & Tools, Projects, Contact Me sections */
 };
 
-export default Routes;
+export default Nav;
