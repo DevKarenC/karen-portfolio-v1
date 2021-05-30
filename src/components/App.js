@@ -1,13 +1,12 @@
 import React from 'react';
 import Routes from './Routes';
-import Sidebar from './Sidebar';
+import { Container } from '../styles/global';
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
+    <Container>
       <Routes />
-    </div>
+    </Container>
   );
 }
 

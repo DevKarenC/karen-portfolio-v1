@@ -20,6 +20,10 @@ const NavContainer = styled(Container)`
   margin-bottom: 0.5rem;
 `;
 
+const MainContainer = styled(Container)`
+  width: calc(100vw - 250px);
+`;
+
 const Button = styled.button`
   border: 1px solid #dcdcdc;
   border-radius: 5px;
@@ -92,6 +96,7 @@ export {
   SidebarSection,
   Container,
   NavContainer,
+  MainContainer,
   Button,
   SocialMediaButton,
   Image,
