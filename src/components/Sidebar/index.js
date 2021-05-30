@@ -1,4 +1,5 @@
 import React from 'react';
+import Routes from './Routes';
 import SocialMediaSection from './SocialMediaSection';
 import profilePic from '../../images/profilePic.png';
 import { SidebarSection, Image, Text, Title } from '../../styles/global';
@@ -17,7 +18,7 @@ const Sidebar = () => {
         Welcome to my portfolio site! Take a minute to learn about me and my
         journey to software engineering ☀️
       </Text>
-      {/* About Me, Languages & Tools, Projects, Contact Me sections */}
+      <Routes />
       <SocialMediaSection />
     </SidebarSection>
   );
