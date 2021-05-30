@@ -3,10 +3,14 @@ import { NavLink } from 'react-router-dom';
 
 const SidebarSection = styled.section`
   padding: 3rem;
+  min-width: 250px;
   width: 250px;
   height: calc(100vh - 7rem);
   box-shadow: 2px 0 4px -1px #d8d8d8;
   clip-path: inset(0px -5px 0px 0px);
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
 `;
 
 const Container = styled.div`

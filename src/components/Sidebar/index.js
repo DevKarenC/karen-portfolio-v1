@@ -7,9 +7,11 @@ import { SidebarSection } from '../../styles/global';
 const Sidebar = () => {
   return (
     <SidebarSection>
-      <Profile />
-      <Nav />
-      <SocialMediaSection />
+      <div>
+        <Profile />
+        <Nav />
+        <SocialMediaSection />
+      </div>
     </SidebarSection>
   );
 };
