@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import About from './Pages/About';
-import Tech from './Pages/Tech';
+import Tech from './Pages/Tech/';
 import Projects from './Pages/Projects';
 import Contacts from './Pages/Contacts';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';

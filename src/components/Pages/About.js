@@ -1,7 +1,14 @@
 import React from 'react';
+import { Title } from '../../styles/global';
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <Title>About Me</Title>
+      {/* Milestones */}
+      {/* Roadmap */}
+    </>
+  );
 };
 
 export default About;

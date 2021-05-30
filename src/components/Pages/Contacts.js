@@ -1,7 +1,12 @@
 import React from 'react';
+import { Title } from '../../styles/global';
 
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return (
+    <>
+      <Title>Get In Touch</Title>
+    </>
+  );
 };
 
 export default Contacts;

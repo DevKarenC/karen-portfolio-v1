@@ -21,7 +21,20 @@ const NavContainer = styled(Container)`
 `;
 
 const MainContainer = styled(Container)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: calc(100vw - 250px);
+  padding: 3rem;
+`;
+
+const BadgeContainer = styled(Container)`
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: center;
+  height: 70vh;
+  width: 750px;
 `;
 
 const Button = styled.button`
@@ -85,11 +98,22 @@ const Text = styled.p`
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.5rem;
+  margin: 0;
+  padding: 0 0 1rem 0;
 `;
 
-const Title = styled(Text)`
+const Name = styled(Text)`
   font-size: 2rem;
-  line-height: 1rem;
+  line-height: normal;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 0;
+`;
+
+const Title = styled(Name)`
+  font-weight: 700;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
 `;
 
 export {
@@ -97,11 +121,13 @@ export {
   Container,
   NavContainer,
   MainContainer,
+  BadgeContainer,
   Button,
   SocialMediaButton,
   Image,
   StyledLink,
   StyledRouterLink,
   Text,
+  Name,
   Title,
 };
