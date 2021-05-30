@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from './Sidebar';
+import Home from './Pages/Home';
 import About from './Pages/About';
 import Tech from './Pages/Tech/';
 import Projects from './Pages/Projects';
@@ -13,6 +14,7 @@ const Routes = () => {
       <Sidebar />
       <MainContainer>
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/tech" component={Tech} />
           <Route exact path="/projects" component={Projects} />
