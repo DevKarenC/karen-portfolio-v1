@@ -43,7 +43,7 @@ const projectDetails = [
       'Improves user experience with helpful error messages, toggle unit system, and responsive design',
     ],
     githubLink: 'https://github.com/DevKarenC/weather-app',
-    demoLink: '',
+    demoLink: 'https://github.com/DevKarenC/weather-app',
   },
   {
     name: 'Tic-tac-toe',
@@ -68,7 +68,7 @@ const projectDetails = [
       'Record the daily progress with a short summary of what I learned and struggled through to improve programming skills',
     ],
     githubLink: 'https://github.com/DevKarenC/100-days-of-code',
-    demoLink: '',
+    demoLink: 'https://github.com/DevKarenC/100-days-of-code',
   },
   {
     name: 'JavaScript 30 Exercises',
@@ -81,7 +81,7 @@ const projectDetails = [
       'Thoroughly document the meaning of important lines of code for learning purposes',
     ],
     githubLink: 'https://github.com/DevKarenC/JavaScript30-with-notes',
-    demoLink: '',
+    demoLink: 'https://github.com/DevKarenC/JavaScript30-with-notes',
   },
 ];
 
