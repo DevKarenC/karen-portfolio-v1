@@ -40,7 +40,27 @@ const BadgeContainer = styled(Container)`
   width: 750px;
 `;
 
-const ProjectContainer = styled(Container)``;
+const ProjectsContainer = styled(Container)`
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 40px 80px;
+  width: 975px;
+`;
+
+const ProjectContainer = styled(Container)`
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  width: 450px;
+  height: 770px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px #e2dad5;
+`;
 
 const Button = styled.button`
   border: 1px solid #dcdcdc;
@@ -77,9 +97,14 @@ const Image = styled.img`
 
 const StyledLink = styled.a`
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
+  text-decoration: none;
   color: #000;
+
+  &:hover {
+    background-color: #ffea99;
+  }
 `;
 
 const StyledRouterLink = styled(NavLink)`
@@ -122,8 +147,22 @@ const Title = styled(Name)`
 `;
 
 const ProjectTitle = styled(Title)`
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
+  margin: 1rem 0;
+`;
+
+const BulletList = styled.li`
+  margin-bottom: 5px;
+
+  &:before {
+    content: '🍀';
+  }
+
+  p {
+    display: inline;
+    margin-left: 5px;
+  }
 `;
 
 export {
@@ -132,6 +171,7 @@ export {
   NavContainer,
   MainContainer,
   BadgeContainer,
+  ProjectsContainer,
   ProjectContainer,
   Button,
   SocialMediaButton,
@@ -142,4 +182,5 @@ export {
   Name,
   Title,
   ProjectTitle,
+  BulletList,
 };

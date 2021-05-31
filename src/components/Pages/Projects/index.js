@@ -1,21 +1,21 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import projectDetails from '../../Data/projectDetails';
-import { Title, ProjectContainer } from '../../../styles/global';
+import { Title, Text, ProjectsContainer } from '../../../styles/global';
 
 const Projects = () => {
   return (
     <>
       <Title>Projects</Title>
-      <ProjectContainer>
+      <Text style={{ fontWeight: '400', marginBottom: '1rem' }}>
+        Check out the project readme's for additional features, learning
+        outcomes, and demos!
+      </Text>
+      <ProjectsContainer>
         {projectDetails.map((project) => (
           <ProjectCard project={project} />
         ))}
-        <p>
-          Check out the project readme's for additional features, learning
-          outcomes, and demos!
-        </p>
-      </ProjectContainer>
+      </ProjectsContainer>
     </>
   );
 };

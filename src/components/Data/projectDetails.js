@@ -10,7 +10,7 @@ const projectDetails = [
     name: 'US COVID-19 Tracker',
     src: covidTrackerImage,
     alt: 'Demo bar graph for the covid tracker',
-    techStack: 'React, Chart.js, Node.js, Express, CSS, Heroku, Git',
+    techStack: 'React, Chart.js, Node.js, Express, CSS, Heroku',
     features: [
       'Shows COVID-19 summary data and 3 different types of chart: bar, line, pie for all 50 states and US as a whole',
       'Uses the API from the Covid Tracking Project and US Census Bureau and Chart.js library for HTML5 based JavaScript charts',
@@ -23,7 +23,7 @@ const projectDetails = [
     name: 'SpongeBob SquarePants Memory Card Game',
     src: memoryCardGameImage,
     alt: 'Demo game play for the memory card game',
-    techStack: 'React Hooks, Semantic UI, CSS, Git',
+    techStack: 'React Hooks, Semantic UI, CSS',
     features: [
       'Uses React Hooks (useState and useEffect) with functional components',
       'Demonstrates the fundamentals of React including the components, states, and the props system',
@@ -36,7 +36,7 @@ const projectDetails = [
     name: 'Weather App',
     src: weatherAppImage,
     alt: 'Demo screenshot for the weather app',
-    techStack: 'HTML, CSS, JavaScript, Webpack, Git',
+    techStack: 'HTML, CSS, JavaScript, Webpack',
     features: [
       'Provides the current weather data (temperature, perceived temperature, humidity, wind speed) for the user specified city',
       'Utilizes the OpenWeather and Unsplash API for weather data and background image',
@@ -49,7 +49,7 @@ const projectDetails = [
     name: 'Tic-tac-toe',
     src: tictactoeImage,
     alt: 'Demo gif for the tic tac toe game',
-    techStack: 'HTML, CSS, JavaScript, Git',
+    techStack: 'HTML, CSS, JavaScript',
     features: [
       'Utilizes JavaScript module pattern, factory functions, private and public properties/methods, and immediately invoked function expression',
       "Displays helpful messages to improve game play, including the player's turn, taken grid, and the winner",
@@ -62,7 +62,7 @@ const projectDetails = [
     name: '100 Days of Code Challenge',
     src: unsplash100DaysOfCodeImage,
     alt: 'Screenshot for completing the 100 days of code challenge',
-    techStack: 'Markdown, Git',
+    techStack: 'Markdown',
     features: [
       'Foster the habit of coding minimum of 1 hour daily by committing to the 100 days of code challenge',
       'Record the daily progress with a short summary of what I learned and struggled through to improve programming skills',
@@ -74,7 +74,7 @@ const projectDetails = [
     name: 'JavaScript 30 Exercises',
     src: javascript30Image,
     alt: 'Screenshot for completing the JavaScript 30 exercises',
-    techStack: 'HTML, CSS, JavaScript, Markdown, Git',
+    techStack: 'HTML, CSS, JavaScript, Markdown',
     features: [
       "Complete the Wes Bos' JavaScript 30 exercises to improve the proficiency of using vanilla JavaScript",
       'Summarize the key concepts of each lesson in the Readme for future reference',

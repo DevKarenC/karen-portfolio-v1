@@ -1,29 +1,44 @@
 import React from 'react';
-import { ProjectTitle, Image } from '../../../styles/global';
+import {
+  Container,
+  ProjectContainer,
+  ProjectTitle,
+  Image,
+  Text,
+  StyledLink,
+  BulletList,
+} from '../../../styles/global';
 
 const ProjectCard = ({ project }) => {
   const { name, src, techStack, features, githubLink, demoLink } = project;
   return (
-    <div>
+    <ProjectContainer>
       <ProjectTitle>{name}</ProjectTitle>
       <Image
         borderRadius="10px"
-        width="800px"
-        height="auto"
+        width="400px"
+        height="250px"
         objectFit="contain"
         src={src}
       />
       <p>Tech Stack</p>
-      <p>{techStack}</p>
+      <Text>{techStack}</Text>
       <p>Features</p>
-      <ul>
+      <ul style={{ paddingLeft: '1rem', listStyleType: 'none' }}>
         {features.map((feature) => (
-          <li>{feature}</li>
+          <BulletList>
+            <Text>{feature}</Text>
+          </BulletList>
         ))}
       </ul>
-      <a href={githubLink}>Github</a>
-      <a href={demoLink}>Demo</a>
-    </div>
+      <Container
+        style={{ position: 'absolute', bottom: 0, marginBottom: '2rem' }}
+      >
+        <StyledLink href={githubLink}>Github</StyledLink>
+        <span style={{ margin: '0 1rem' }}>|</span>
+        <StyledLink href={demoLink}>Demo</StyledLink>
+      </Container>
+    </ProjectContainer>
   );
 };
 
