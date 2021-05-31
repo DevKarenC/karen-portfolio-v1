@@ -9,7 +9,7 @@ const Tech = () => {
       <Title>Languages & Tools</Title>
       <BadgeContainer>
         {techStackData.map((tech) => (
-          <Badge key={tech.label} alt={tech.label} src={tech.src} />
+          <Badge key={tech.label} tech={tech} />
         ))}
       </BadgeContainer>
     </>

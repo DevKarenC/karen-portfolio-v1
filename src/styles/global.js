@@ -33,13 +33,14 @@ const MainContainer = styled(Container)`
 `;
 
 const BadgeContainer = styled(Container)`
-  display: flex;
   flex-wrap: wrap;
   align-content: space-evenly;
   justify-content: center;
   height: 70vh;
   width: 750px;
 `;
+
+const ProjectContainer = styled(Container)``;
 
 const Button = styled.button`
   border: 1px solid #dcdcdc;
@@ -70,8 +71,8 @@ const SocialMediaButton = styled(Button)`
 const Image = styled.img`
   border-radius: ${(props) => props.borderRadius};
   width: ${(props) => props.width};
-  height: ${(props) => props.width};
-  object-fit: cover;
+  height: ${(props) => props.height};
+  object-fit: ${(props) => props.objectFit}; ;
 `;
 
 const StyledLink = styled.a`
@@ -120,12 +121,18 @@ const Title = styled(Name)`
   text-align: center;
 `;
 
+const ProjectTitle = styled(Title)`
+  font-size: 1.5rem;
+  font-weight: 400;
+`;
+
 export {
   SidebarSection,
   Container,
   NavContainer,
   MainContainer,
   BadgeContainer,
+  ProjectContainer,
   Button,
   SocialMediaButton,
   Image,
@@ -134,4 +141,5 @@ export {
   Text,
   Name,
   Title,
+  ProjectTitle,
 };

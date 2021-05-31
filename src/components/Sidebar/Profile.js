@@ -8,8 +8,10 @@ const Profile = () => {
       <Image
         src={profilePic}
         alt="Karen Choi Profile"
-        borderRadius={'50%'}
-        width={'150px'}
+        borderRadius="50%"
+        width="150px"
+        height="150px"
+        objectFit="cover"
       />
       <Name>Karen Choi</Name>
       <Text>
