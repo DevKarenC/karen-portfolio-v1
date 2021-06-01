@@ -1,8 +1,9 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Home from './Pages/Home';
-import About from './Pages/About';
+import About from './Pages/About/';
 import Tech from './Pages/Tech/';
+import Journey from './Pages/Journey/';
 import Projects from './Pages/Projects/';
 import Contacts from './Pages/Contacts';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -17,6 +18,7 @@ const Routes = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/tech" component={Tech} />
+          <Route exact path="/journey" component={Journey} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contacts" component={Contacts} />
         </Switch>

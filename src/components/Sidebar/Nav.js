@@ -10,6 +10,9 @@ const Nav = () => {
       <StyledRouterLink exact to="/tech" activeClassName="current">
         Languages & Tools
       </StyledRouterLink>
+      <StyledRouterLink exact to="/journey" activeClassName="current">
+        My Coding Journey
+      </StyledRouterLink>
       <StyledRouterLink exact to="/projects" activeClassName="current">
         Projects
       </StyledRouterLink>

@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
         borderRadius="10px"
         width="400px"
         height="250px"
-        objectFit="contain"
+        objectFit="fill"
         src={src}
       />
       <p>Tech Stack</p>
@@ -34,9 +34,13 @@ const ProjectCard = ({ project }) => {
       <Container
         style={{ position: 'absolute', bottom: 0, marginBottom: '2rem' }}
       >
-        <StyledLink href={githubLink}>Github</StyledLink>
+        <StyledLink href={githubLink} target="blank">
+          Github
+        </StyledLink>
         <span style={{ margin: '0 1rem' }}>|</span>
-        <StyledLink href={demoLink}>Demo</StyledLink>
+        <StyledLink href={demoLink} target="blank">
+          Demo
+        </StyledLink>
       </Container>
     </ProjectContainer>
   );

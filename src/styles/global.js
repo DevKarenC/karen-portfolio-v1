@@ -20,7 +20,7 @@ const Container = styled.div`
 const NavContainer = styled(Container)`
   flex-direction: column;
   justify-content: space-evenly;
-  height: 125px;
+  height: 160px;
   margin-bottom: 0.5rem;
 `;
 
@@ -60,6 +60,92 @@ const ProjectContainer = styled(Container)`
   height: 770px;
   padding: 1rem;
   box-shadow: 0 4px 8px #e2dad5;
+`;
+
+const JourneyContainer = styled(Container)`
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  > div {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media only screen and (min-width: 768px) {
+    > div:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 100%;
+      background-color: #000;
+    }
+
+    li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-90px);
+      border-radius: 20px 0px 20px 20px;
+    }
+
+    li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(50px);
+      border-radius: 0px 20px 20px 20px;
+    }
+
+    li::before {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: #000;
+      top: -10px;
+    }
+
+    li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+
+    li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+
+    li:hover::before {
+      background-color: #ffb5c3;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding: 20px;
+    background-color: #ffea99;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 const Button = styled.button`
@@ -165,6 +251,25 @@ const BulletList = styled.li`
   }
 `;
 
+const JourneyDate = styled(Text)`
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    top: -30px;
+  }
+`;
+const JourneyTitle = styled(Text)`
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0 0 0.5rem 0;
+`;
+const JourneyContent = styled(Text)`
+  line-height: 25px;
+  padding: 0;
+`;
+
 export {
   SidebarSection,
   Container,
@@ -173,6 +278,7 @@ export {
   BadgeContainer,
   ProjectsContainer,
   ProjectContainer,
+  JourneyContainer,
   Button,
   SocialMediaButton,
   Image,
@@ -183,4 +289,7 @@ export {
   Title,
   ProjectTitle,
   BulletList,
+  JourneyDate,
+  JourneyTitle,
+  JourneyContent,
 };
