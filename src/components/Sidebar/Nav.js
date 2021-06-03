@@ -16,9 +16,6 @@ const Nav = () => {
       <StyledRouterLink exact to="/projects" activeClassName="current">
         Projects
       </StyledRouterLink>
-      <StyledRouterLink exact to="/contacts" activeClassName="current">
-        Get In Touch
-      </StyledRouterLink>
     </NavContainer>
   );
 };

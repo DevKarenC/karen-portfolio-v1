@@ -12,7 +12,8 @@ const About = () => {
         (thanks to The Odin Project and teachers on YouTube!) everyday after
         work. Now as part of the immersive software engineering program, I am
         learning more than ever and excited to start working again in the tech
-        industry! 🥳
+        industry! 🥳 Feel free to connect with me on LinkedIn and say hi, or
+        send me an email! I look forward to chatting with you.
       </Text>
     </>
   );

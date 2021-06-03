@@ -3,7 +3,6 @@ import About from './About';
 import Tech from './Tech';
 import Journey from './Journey';
 import Projects from './Projects';
-import Contacts from './Contacts';
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
       <Tech />
       <Journey />
       <Projects />
-      <Contacts />
     </>
   );
 };
