@@ -21,7 +21,10 @@ const SocialMediaSection = () => {
         </StyledLink>
       </SocialMediaButton>
       <SocialMediaButton>
-        <StyledLink>
+        <StyledLink
+          href="https://drive.google.com/file/d/1WbT-pRv3BDcf9I09Dwdl31FWdmhfHfFu/view?usp=sharing"
+          target="blank"
+        >
           <FontAwesomeIcon icon={faFileAlt} style={{ paddingBottom: '1px' }} />
         </StyledLink>
       </SocialMediaButton>

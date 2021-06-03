@@ -1,7 +1,5 @@
 import React from 'react';
-import Journey from '../Journey';
-import journeyDetails from '../../Data/journeyDetails';
-import { JourneyContainer, Title, Text } from '../../../styles/global';
+import { Title, Text } from '../../../styles/global';
 
 const About = () => {
   return (
