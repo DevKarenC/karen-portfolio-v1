@@ -3,7 +3,7 @@ const journeyDetails = [
     title: 'Grace Hopper Program at Fullstack Academy 👩🏻‍💻',
     content:
       'Focus on learning full-stack JavaScript development through pair-programming, independent and group projects',
-    dates: 'Apr 2021 - Present (Graduating in July 2021)',
+    dates: 'Apr 2021 - July 2021',
   },
   {
     title: 'Self-study 📚 (Always Be Coding!)',

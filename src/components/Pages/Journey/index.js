@@ -6,7 +6,7 @@ import { JourneyContainer, Title } from '../../../styles/global';
 const Journey = () => {
   return (
     <div id="journey">
-      <Title style={{ fontSize: '1.5rem' }}>My Coding Journey</Title>
+      <Title>My Coding Journey</Title>
       <JourneyContainer>
         <div>
           <ul>

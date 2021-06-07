@@ -2,15 +2,17 @@ import styled from 'styled-components';
 import { NavHashLink } from 'react-router-hash-link';
 
 const SidebarSection = styled.section`
+  position: sticky;
+  top: 0;
   padding: 3rem;
   min-width: 250px;
   width: 250px;
-  height: calc(100vh - 7rem);
+  height: calc(100vh - 6rem);
+  background-color: #1d252d;
+  color: #ffffff;
   box-shadow: 2px 0 4px -1px #d8d8d8;
   clip-path: inset(0px -5px 0px 0px);
   overflow-y: auto;
-  position: sticky;
-  top: 0;
 `;
 
 const Container = styled.div`
@@ -28,6 +30,7 @@ const MainContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ecf0f3;
   width: calc(100vw - 250px);
   padding: 3rem;
 `;
@@ -60,6 +63,7 @@ const ProjectContainer = styled(Container)`
   height: 770px;
   padding: 1rem;
   box-shadow: 0 4px 8px #e2dad5;
+  background-color: #ffffff;
 `;
 
 const JourneyContainer = styled(Container)`
@@ -138,7 +142,7 @@ const JourneyContainer = styled(Container)`
 
   li {
     padding: 20px;
-    background-color: #ffea99;
+    background-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 20px;
   }
@@ -149,9 +153,9 @@ const JourneyContainer = styled(Container)`
 `;
 
 const Button = styled.button`
-  border: 1px solid #dcdcdc;
+  border: 1px solid #1d252d;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #ffffff;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -198,7 +202,7 @@ const StyledRouterLink = styled(NavHashLink)`
   font-weight: 300;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 
   &:hover {
     font-weight: 400;
@@ -228,7 +232,7 @@ const Name = styled(Text)`
 
 const Title = styled(Name)`
   font-weight: 700;
-  margin: 0 0 2.5rem 0;
+  margin: 2.5rem 0;
   text-align: center;
 `;
 
