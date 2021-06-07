@@ -39,8 +39,14 @@ const BadgeContainer = styled(Container)`
   flex-wrap: wrap;
   align-content: space-evenly;
   justify-content: center;
-  height: 70vh;
-  width: 750px;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+
+  :last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const ProjectsContainer = styled(Container)`
@@ -152,6 +158,11 @@ const JourneyContainer = styled(Container)`
   }
 `;
 
+const PageDiv = styled.div`
+  width: 800px;
+  margin-bottom: 3rem;
+`;
+
 const Button = styled.button`
   border: 1px solid #1d252d;
   border-radius: 5px;
@@ -231,8 +242,10 @@ const Name = styled(Text)`
 `;
 
 const Title = styled(Name)`
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 400;
   margin: 2.5rem 0;
+  padding: 0.5rem 0;
   text-align: center;
 `;
 
@@ -240,6 +253,14 @@ const ProjectTitle = styled(Title)`
   font-size: 1.25rem;
   font-weight: 400;
   margin: 1rem 0;
+`;
+
+const TechStackTitle = styled(ProjectTitle)`
+  background-color: #1d252d;
+  border-radius: 10px 10px 0 0;
+  color: #ffffff;
+  margin: 0;
+  padding: 0.75rem 0;
 `;
 
 const BulletList = styled.li`
@@ -283,6 +304,7 @@ export {
   ProjectsContainer,
   ProjectContainer,
   JourneyContainer,
+  PageDiv,
   Button,
   SocialMediaButton,
   Image,
@@ -292,6 +314,7 @@ export {
   Name,
   Title,
   ProjectTitle,
+  TechStackTitle,
   BulletList,
   JourneyDate,
   JourneyTitle,

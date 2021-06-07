@@ -1,84 +1,112 @@
-const generateRandomColor = () => {
-  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  // avoid displaying a white logo on the white background
-  while (randomColor[0] === 'f') {
-    randomColor = `a${randomColor.slice(1)}`;
-  }
-  return randomColor;
-};
+import chartjsLogo from '../../images/Tech/chartjs-logo.svg';
+import cssLogo from '../../images/Tech/css-logo.png';
+import expressLogo from '../../images/Tech/express-logo.png';
+import gitLogo from '../../images/Tech/git-logo.png';
+import herokuLogo from '../../images/Tech/heroku-logo.png';
+import htmlLogo from '../../images/Tech/html-logo.png';
+import javascriptLogo from '../../images/Tech/javascript-logo.png';
+import markdownLogo from '../../images/Tech/markdown-logo.png';
+import nodejsLogo from '../../images/Tech/nodejs-logo.png';
+import npmLogo from '../../images/Tech/npm-logo.png';
+import postgresqlLogo from '../../images/Tech/postgresql-logo.png';
+import postmanLogo from '../../images/Tech/postman-logo.png';
+import reactLogo from '../../images/Tech/react-logo.png';
+import reactrouterLogo from '../../images/Tech/reactrouter-logo.png';
+import reduxLogo from '../../images/Tech/redux-logo.png';
+import sequelizeLogo from '../../images/Tech/sequelize-logo.svg';
+import styledcomponentsLogo from '../../images/Tech/styledcomponents-logo.png';
+import webpackLogo from '../../images/Tech/webpack-logo.png';
 
 const techStack = [
   {
     label: 'HTML5',
-    src: `https://img.shields.io/badge/html5-%23.svg?style=for-the-badge&logo=html5&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: htmlLogo,
+    type: 'language',
   },
   {
     label: 'CSS3',
-    src: `https://img.shields.io/badge/css3-%23.svg?style=for-the-badge&logo=css3&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: cssLogo,
+    type: 'language',
   },
   {
     label: 'JavaScript',
-    src: `https://img.shields.io/badge/javascript-%23.svg?style=for-the-badge&logo=javascript&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: javascriptLogo,
+    type: 'language',
   },
   {
     label: 'Chart.js',
-    src: `https://img.shields.io/badge/ChartJS-%23.svg?style=for-the-badge&logo=chart-dot-js&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: chartjsLogo,
+    type: 'library',
   },
   {
     label: 'Node.js',
-    src: `https://img.shields.io/badge/Node.js-%23.svg?style=for-the-badge&logo=node-dot-js&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: nodejsLogo,
+    type: 'library',
   },
   {
     label: 'npm',
-    src: `https://img.shields.io/badge/npm-%23.svg?style=for-the-badge&logo=npm&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: npmLogo,
+    type: 'tool',
   },
   {
     label: 'Express.js',
-    src: `https://img.shields.io/badge/express-%23.svg?style=for-the-badge&logo=express&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: expressLogo,
+    type: 'library',
   },
   {
     label: 'React',
-    src: `https://img.shields.io/badge/react-%23.svg?style=for-the-badge&logo=react&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: reactLogo,
+    type: 'library',
   },
   {
     label: 'React Router',
-    src: `https://img.shields.io/badge/react_router-%23.svg?style=for-the-badge&logo=react-router&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: reactrouterLogo,
+    type: 'library',
   },
   {
     label: 'Styled-Components',
-    src: `https://img.shields.io/badge/Styled--Components-%23.svg?style=for-the-badge&logo=Styled-Components&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: styledcomponentsLogo,
+    type: 'library',
   },
   {
     label: 'Redux',
-    src: `https://img.shields.io/badge/redux-%23.svg?style=for-the-badge&logo=redux&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: reduxLogo,
+    type: 'library',
   },
   {
     label: 'Sequelize',
-    src: `https://img.shields.io/badge/Sequelize-%23.svg?style=for-the-badge&logo=Sequelize&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: sequelizeLogo,
+    type: 'database',
   },
   {
     label: 'PostgreSQL',
-    src: `https://img.shields.io/badge/PostgreSQL-%23.svg?style=for-the-badge&logo=PostgreSQL&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: postgresqlLogo,
+    type: 'database',
   },
   {
     label: 'Markdown',
-    src: `https://img.shields.io/badge/Markdown-%23.svg?style=for-the-badge&logo=Markdown&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: markdownLogo,
+    type: 'language',
   },
   {
     label: 'Heroku',
-    src: `https://img.shields.io/badge/Heroku-%23.svg?style=for-the-badge&logo=Heroku&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: herokuLogo,
+    type: 'tool',
   },
   {
     label: 'Git',
-    src: `https://img.shields.io/badge/Git-%23.svg?style=for-the-badge&logo=Git&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: gitLogo,
+    type: 'tool',
   },
   {
     label: 'Postman',
-    src: `https://img.shields.io/badge/Postman-%23.svg?style=for-the-badge&logo=Postman&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    src: postmanLogo,
+    type: 'tool',
   },
   {
-    label: 'Canva',
-    src: `https://img.shields.io/badge/Canva-%23.svg?style=for-the-badge&logo=Canva&logoColor=${generateRandomColor()}&color=white&labelColor=white&logoWidth=-1`,
+    label: 'Webpack',
+    src: webpackLogo,
+    type: 'tool',
   },
 ];
 

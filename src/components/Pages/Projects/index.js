@@ -1,13 +1,20 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import projectDetails from '../../Data/projectDetails';
-import { Title, Text, ProjectsContainer } from '../../../styles/global';
+import {
+  PageDiv,
+  Title,
+  Text,
+  ProjectsContainer,
+} from '../../../styles/global';
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <Title>Projects</Title>
-      <Text style={{ fontWeight: '400', marginBottom: '1rem' }}>
+    <PageDiv id="projects" style={{ width: '975px' }}>
+      <Title style={{ margin: '2.5rem 0 1.5rem 0' }}>Projects</Title>
+      <Text
+        style={{ textAlign: 'center', fontWeight: '400', marginBottom: '1rem' }}
+      >
         Check out the project readme's for additional features, learning
         outcomes, and demos!
       </Text>
@@ -16,7 +23,7 @@ const Projects = () => {
           <ProjectCard project={project} />
         ))}
       </ProjectsContainer>
-    </div>
+    </PageDiv>
   );
 };
 

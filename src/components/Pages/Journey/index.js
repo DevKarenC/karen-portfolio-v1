@@ -1,12 +1,18 @@
 import React from 'react';
 import Event from '../Journey/Event';
 import journeyDetails from '../../Data/journeyDetails';
-import { JourneyContainer, Title } from '../../../styles/global';
+import { PageDiv, JourneyContainer, Title, Text } from '../../../styles/global';
 
 const Journey = () => {
   return (
-    <div id="journey">
-      <Title>My Coding Journey</Title>
+    <PageDiv id="journey">
+      <Title style={{ margin: '2.5rem 0 3.5rem 0' }}>My Coding Journey</Title>
+      <Text
+        style={{ textAlign: 'center', fontWeight: '400', marginBottom: '3rem' }}
+      >
+        Congratulations! You made it all the way to the end. Now you get to
+        follow my coding journey... 🚗
+      </Text>
       <JourneyContainer>
         <div>
           <ul>
@@ -16,7 +22,7 @@ const Journey = () => {
           </ul>
         </div>
       </JourneyContainer>
-    </div>
+    </PageDiv>
   );
 };
 
