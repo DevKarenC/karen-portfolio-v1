@@ -4,16 +4,16 @@ import { StyledRouterLink, NavContainer } from '../../styles/global';
 const Nav = () => {
   return (
     <NavContainer>
-      <StyledRouterLink exact to="/about" activeClassName="current">
+      <StyledRouterLink smooth to="/#about" activeClassName="current">
         About Me
       </StyledRouterLink>
-      <StyledRouterLink exact to="/tech" activeClassName="current">
+      <StyledRouterLink smooth to="/#tech" activeClassName="current">
         Languages & Tools
       </StyledRouterLink>
-      <StyledRouterLink exact to="/journey" activeClassName="current">
+      <StyledRouterLink smooth to="/#journey" activeClassName="current">
         My Coding Journey
       </StyledRouterLink>
-      <StyledRouterLink exact to="/projects" activeClassName="current">
+      <StyledRouterLink smooth to="/#projects" activeClassName="current">
         Projects
       </StyledRouterLink>
     </NavContainer>

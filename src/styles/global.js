@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 
 const SidebarSection = styled.section`
   padding: 3rem;
@@ -193,7 +193,7 @@ const StyledLink = styled.a`
   }
 `;
 
-const StyledRouterLink = styled(NavLink)`
+const StyledRouterLink = styled(NavHashLink)`
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;

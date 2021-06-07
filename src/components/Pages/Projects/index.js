@@ -5,7 +5,7 @@ import { Title, Text, ProjectsContainer } from '../../../styles/global';
 
 const Projects = () => {
   return (
-    <>
+    <div id="projects">
       <Title>Projects</Title>
       <Text style={{ fontWeight: '400', marginBottom: '1rem' }}>
         Check out the project readme's for additional features, learning
@@ -16,7 +16,7 @@ const Projects = () => {
           <ProjectCard project={project} />
         ))}
       </ProjectsContainer>
-    </>
+    </div>
   );
 };
 

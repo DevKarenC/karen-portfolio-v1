@@ -3,7 +3,7 @@ import { Title, Text } from '../../../styles/global';
 
 const About = () => {
   return (
-    <>
+    <div id="about">
       <Title>About Me</Title>
       <Text>
         Hi there! My name is Karen Choi and I'm a former auditor turned software
@@ -15,7 +15,7 @@ const About = () => {
         industry! 🥳 Feel free to connect with me on LinkedIn and say hi, or
         send me an email! I look forward to chatting with you.
       </Text>
-    </>
+    </div>
   );
 };
 
