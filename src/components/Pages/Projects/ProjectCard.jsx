@@ -13,7 +13,11 @@ const ProjectCard = ({ project }) => {
   const { name, src, techStack, features, githubLink, demoLink } = project;
   return (
     <ProjectContainer>
-      <ProjectTitle>{name}</ProjectTitle>
+      <ProjectTitle>
+        <StyledLink href={githubLink} target="blank">
+          {name}
+        </StyledLink>
+      </ProjectTitle>
       <Image
         borderRadius="10px"
         width="400px"
