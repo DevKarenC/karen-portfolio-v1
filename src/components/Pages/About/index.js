@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageDiv, Title, Text } from '../../../styles/global';
+import { PageDiv, Title, Text, StyledLink } from '../../../styles/global';
 
 const About = () => {
   return (
@@ -18,8 +18,19 @@ const About = () => {
         (thanks to The Odin Project and teachers on YouTube!) everyday after
         work. Now as part of the immersive software engineering program, I am
         learning more than ever and excited to start working again in the tech
-        industry! 🥳 Feel free to connect with me on LinkedIn and say hi, or
-        send me an email! I look forward to chatting with you.
+        industry! 🥳 Feel free to connect with me on{' '}
+        <StyledLink
+          href="https://www.linkedin.com/in/seungahchoi/"
+          target="blank"
+          style={{ fontWeight: '300px' }}
+        >
+          LinkedIn
+        </StyledLink>{' '}
+        and say hi, or send me an{' '}
+        <StyledLink href="mailto:seungah.karen.choi@gmail.com">
+          email
+        </StyledLink>
+        ! I look forward to chatting with you.
       </Text>
     </PageDiv>
   );
