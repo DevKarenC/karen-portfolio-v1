@@ -17,8 +17,6 @@ const Tech = () => {
     { language: [], library: [], database: [], tool: [] }
   );
 
-  console.log(badgeByTypes);
-
   return (
     <PageDiv id="tech">
       <Title style={{ margin: '2.5rem 0 1.5rem 0' }}>Tech Stack</Title>

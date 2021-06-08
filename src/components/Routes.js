@@ -10,7 +10,7 @@ const Routes = () => {
       <Sidebar />
       <MainContainer>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/karen-portfolio-v1" component={Home} />
         </Switch>
       </MainContainer>
     </Router>
