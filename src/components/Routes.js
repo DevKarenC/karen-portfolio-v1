@@ -6,11 +6,11 @@ import { MainContainer } from '../styles/global';
 
 const Routes = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Sidebar />
       <MainContainer>
         <Switch>
-          <Route exact path="/karen-portfolio-v1" component={Home} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </MainContainer>
     </Router>
