@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import projectDetails from '../../Data/projectDetails';
 import {
-  PageDiv,
+  ProjectPageDiv,
   Title,
   Text,
   ProjectsContainer,
@@ -10,7 +10,7 @@ import {
 
 const Projects = () => {
   return (
-    <PageDiv id="projects" style={{ width: '975px' }}>
+    <ProjectPageDiv id="projects">
       <Title style={{ margin: '2.5rem 0 1.5rem 0' }}>Projects</Title>
       <Text
         style={{ textAlign: 'center', fontWeight: '400', marginBottom: '1rem' }}
@@ -23,7 +23,7 @@ const Projects = () => {
           <ProjectCard project={project} />
         ))}
       </ProjectsContainer>
-    </PageDiv>
+    </ProjectPageDiv>
   );
 };
 

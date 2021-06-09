@@ -2,11 +2,13 @@ import React from 'react';
 import {
   Container,
   ProjectContainer,
+  ProjectLinksContainer,
   ProjectTitle,
-  Image,
+  ProjectImage,
   Text,
   StyledLink,
   BulletList,
+  Features,
 } from '../../../styles/global';
 
 const ProjectCard = ({ project }) => {
@@ -18,7 +20,7 @@ const ProjectCard = ({ project }) => {
           {name}
         </StyledLink>
       </ProjectTitle>
-      <Image
+      <ProjectImage
         borderRadius="10px"
         width="400px"
         height="250px"
@@ -28,16 +30,14 @@ const ProjectCard = ({ project }) => {
       <p>Tech Stack</p>
       <Text>{techStack}</Text>
       <p>Features</p>
-      <ul style={{ paddingLeft: '1rem', listStyleType: 'none' }}>
+      <Features>
         {features.map((feature) => (
           <BulletList>
             <Text>{feature}</Text>
           </BulletList>
         ))}
-      </ul>
-      <Container
-        style={{ position: 'absolute', bottom: 0, marginBottom: '2rem' }}
-      >
+      </Features>
+      <ProjectLinksContainer>
         <StyledLink href={githubLink} target="blank">
           Github
         </StyledLink>
@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
         <StyledLink href={demoLink} target="blank">
           Demo
         </StyledLink>
-      </Container>
+      </ProjectLinksContainer>
     </ProjectContainer>
   );
 };

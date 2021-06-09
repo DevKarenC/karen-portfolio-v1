@@ -13,6 +13,12 @@ const SidebarSection = styled.section`
   box-shadow: 2px 0 4px -1px #d8d8d8;
   clip-path: inset(0px -5px 0px 0px);
   overflow-y: auto;
+
+  @media only screen and (max-width: 414px) {
+    min-width: calc(100vw - 6rem);
+    height: calc(100vh - 6rem);
+    text-align: center;
+  }
 `;
 
 const Container = styled.div`
@@ -33,6 +39,12 @@ const MainContainer = styled(Container)`
   background-color: #ecf0f3;
   width: calc(100vw - 250px);
   padding: 3rem;
+
+  @media only screen and (max-width: 414px) {
+    width: calc(100vw - 6rem);
+    top: 100vh;
+    position: absolute;
+  }
 `;
 
 const BadgeContainer = styled(Container)`
@@ -56,6 +68,12 @@ const ProjectsContainer = styled(Container)`
   grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
   gap: 40px 80px;
   width: 975px;
+
+  @media only screen and (max-width: 414px) {
+    width: calc(100vw - 6rem);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px 80px;
+  }
 `;
 
 const ProjectContainer = styled(Container)`
@@ -70,6 +88,21 @@ const ProjectContainer = styled(Container)`
   padding: 1rem;
   box-shadow: 0 4px 8px #e2dad5;
   background-color: #ffffff;
+
+  @media only screen and (max-width: 414px) {
+    width: 300px;
+    height: 100%;
+  }
+`;
+
+const ProjectLinksContainer = styled(Container)`
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: 414px) {
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const JourneyContainer = styled(Container)`
@@ -83,6 +116,10 @@ const JourneyContainer = styled(Container)`
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+
+    @media only screen and (max-width: 414px) {
+      width: 100%;
+    }
   }
 
   @media only screen and (min-width: 768px) {
@@ -144,6 +181,11 @@ const JourneyContainer = styled(Container)`
 
   ul {
     list-style: none;
+
+    @media only screen and (max-width: 414px) {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   li {
@@ -151,6 +193,10 @@ const JourneyContainer = styled(Container)`
     background-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 20px;
+
+    @media only screen and (max-width: 414px) {
+      text-align: center;
+    }
   }
 
   li:last-child {
@@ -161,6 +207,14 @@ const JourneyContainer = styled(Container)`
 const PageDiv = styled.div`
   width: 800px;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 414px) {
+    width: calc(100vw - 6rem);
+  }
+`;
+
+const ProjectPageDiv = styled(PageDiv)`
+  width: '975px';
 `;
 
 const Button = styled.button`
@@ -193,7 +247,14 @@ const Image = styled.img`
   border-radius: ${(props) => props.borderRadius};
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  object-fit: ${(props) => props.objectFit}; ;
+  object-fit: ${(props) => props.objectFit};
+`;
+
+const ProjectImage = styled(Image)`
+  @media only screen and (max-width: 414px) {
+    width: 300px;
+    object-fit: contain;
+  }
 `;
 
 const StyledLink = styled.a`
@@ -247,6 +308,10 @@ const Title = styled(Name)`
   margin: 2.5rem 0;
   padding: 0.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: 414px) {
+    margin: '1rem 0';
+  }
 `;
 
 const ProjectTitle = styled(Title)`
@@ -273,6 +338,15 @@ const BulletList = styled.li`
   p {
     display: inline;
     margin-left: 5px;
+  }
+`;
+
+const Features = styled.ul`
+  padding-left: 1rem;
+  list-style-type: none;
+
+  @media only screen and (max-width: 414px) {
+    padding-left: 0.5rem;
   }
 `;
 
@@ -303,11 +377,14 @@ export {
   BadgeContainer,
   ProjectsContainer,
   ProjectContainer,
+  ProjectLinksContainer,
   JourneyContainer,
   PageDiv,
+  ProjectPageDiv,
   Button,
   SocialMediaButton,
   Image,
+  ProjectImage,
   StyledLink,
   StyledRouterLink,
   Text,
@@ -316,6 +393,7 @@ export {
   ProjectTitle,
   TechStackTitle,
   BulletList,
+  Features,
   JourneyDate,
   JourneyTitle,
   JourneyContent,
