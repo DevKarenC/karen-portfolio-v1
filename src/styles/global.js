@@ -14,7 +14,7 @@ const SidebarSection = styled.section`
   clip-path: inset(0px -5px 0px 0px);
   overflow-y: auto;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 1024px) {
     min-width: calc(100vw - 6rem);
     height: calc(100vh - 6rem);
     text-align: center;
@@ -40,7 +40,11 @@ const MainContainer = styled(Container)`
   width: calc(100vw - 250px);
   padding: 3rem;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 1439px) {
+    width: calc(100vw - 250px - 12rem);
+  }
+
+  @media only screen and (max-width: 1024px) {
     width: calc(100vw - 6rem);
     top: 100vh;
     position: absolute;
@@ -69,9 +73,13 @@ const ProjectsContainer = styled(Container)`
   gap: 40px 80px;
   width: 975px;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 1439px) {
+    width: calc(100vw - 250px - 12rem);
+  }
+
+  @media only screen and (max-width: 1024px) {
     width: calc(100vw - 6rem);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     gap: 50px 80px;
   }
 `;
@@ -88,6 +96,11 @@ const ProjectContainer = styled(Container)`
   padding: 1rem;
   box-shadow: 0 4px 8px #e2dad5;
   background-color: #ffffff;
+
+  @media only screen and (min-width: 776px) and (max-width: 1000px) {
+    width: 400px;
+    height: 100%;
+  }
 
   @media only screen and (max-width: 414px) {
     width: 300px;
@@ -208,13 +221,25 @@ const PageDiv = styled.div`
   width: 800px;
   margin-bottom: 3rem;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 1439px) {
+    width: calc(100vw - 250px - 12rem);
+  }
+
+  @media only screen and (max-width: 1024px) {
     width: calc(100vw - 6rem);
   }
 `;
 
 const ProjectPageDiv = styled(PageDiv)`
-  width: '975px';
+  width: 975px;
+
+  @media only screen and (max-width: 1439px) {
+    width: calc(100vw - 250px - 12rem);
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: calc(100vw - 6rem);
+  }
 `;
 
 const Button = styled.button`

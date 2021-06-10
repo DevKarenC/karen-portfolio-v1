@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Container,
   ProjectContainer,
   ProjectLinksContainer,
   ProjectTitle,
