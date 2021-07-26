@@ -3,6 +3,7 @@ import chartjsLogo from '../../images/Tech/chartjs-logo.svg';
 import cssLogo from '../../images/Tech/css-logo.png';
 import enzymeLogo from '../../images/Tech/enzyme-logo.png';
 import expressLogo from '../../images/Tech/express-logo.png';
+import firebaseLogo from "../../images/Tech/firebase-logo.png"
 import gitLogo from '../../images/Tech/git-logo.png';
 import herokuLogo from '../../images/Tech/heroku-logo.png';
 import htmlLogo from '../../images/Tech/html-logo.png';
@@ -59,6 +60,11 @@ const techStack = [
     type: 'library',
   },
   {
+    label: 'React Native',
+    src: reactLogo,
+    type: 'library',
+  },
+  {
     label: 'React Router',
     src: reactrouterLogo,
     type: 'library',
@@ -86,6 +92,11 @@ const techStack = [
   {
     label: 'PostgreSQL',
     src: postgresqlLogo,
+    type: 'database',
+  },
+  {
+    label: 'Firebase',
+    src: firebaseLogo,
     type: 'database',
   },
   {
