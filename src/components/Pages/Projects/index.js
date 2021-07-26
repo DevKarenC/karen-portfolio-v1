@@ -11,7 +11,7 @@ import {
 const Projects = () => {
   return (
     <ProjectPageDiv id="projects">
-      <Title style={{ margin: '2.5rem 0 1.5rem 0' }}>Projects</Title>
+      <Title style={{ margin: '2.5rem 0 1.5rem 0' }}>Technical Projects</Title>
       <Text
         style={{ textAlign: 'center', fontWeight: '400', marginBottom: '1rem' }}
       >
