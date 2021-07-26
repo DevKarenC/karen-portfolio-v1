@@ -1,3 +1,4 @@
+import tingleMockupImage from "../../images/Projects/tingle-mockup.jpg"
 import covidTrackerImage from '../../images/Projects/covid-tracker-demo-bar.gif';
 import memoryCardGameImage from '../../images/Projects/spongebob-squarepants-memory-game-demo.gif';
 import weatherAppImage from '../../images/Projects/weather-app-screenshot.png';
@@ -6,6 +7,19 @@ import unsplash100DaysOfCodeImage from '../../images/Projects/unsplash-100-days-
 import javascript30Image from '../../images/Projects/JS3-social-share.png';
 
 const projectDetails = [
+  {
+    name: 'Tingle: Social Media Mobile App',
+    src: tingleMockupImage,
+    alt: 'Product mockup for Tingle, the social media mobile application',
+    techStack: 'React Native, Redux, Firebase, Cloudinary, Expo',
+    features: [
+      'Developed social media mobile app (15+ screens) that allows users to set up profile and connect with others with similar interests via likes, search, and chats',
+      'Integrated NoSQL Firestore to store user data and authentication and wrote queries to retrieve realtime database information',
+      'Facilitated project management by participating in daily stand-ups and utilizing Github Project Board in a team of 3',
+    ],
+    githubLink: 'https://github.com/03-cs-wockys-waywards/capstone',
+    demoLink: 'https://www.youtube.com/watch?list=PLx0iOsdUOUmnxvdRhz1frAMDEiERKJ9-v&v=BZztK0R6BBk&feature=youtu.be',
+  },
   {
     name: 'US COVID-19 Tracker',
     src: covidTrackerImage,
